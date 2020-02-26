@@ -1,0 +1,55 @@
+" use defaults (skipped as soon as .vimrc exists)
+source $VIMRUNTIME/defaults.vim
+
+" Use macOS clipboard when yank and paste
+set clipboard=unnamed
+
+" Enable line numbers
+set number
+
+" always show status line
+set laststatus=2
+
+" always show tab line
+set showtabline=2
+
+" add (+=) the dash ("-") to word selection
+set iskeyword+=-
+
+" ==========================================================
+"                         netrw
+" ==========================================================
+" netrw file selector mode 1 (shows date and filesize)
+"let g:netrw_liststyle=1
+
+" Remove the banner of the netrw file selector
+let g:netrw_banner=0
+
+" Size of netrw file selector 25%
+let g:netrw_winsize = 20
+
+" netrw open in previous window
+let g:netrw_browse_split=4
+
+" open netrw file selector automatically
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END
+" ==========================================================
+
+" powerline
+set rtp+=/usr/local/lib/python3.7/site-packages/powerline/bindings/vim
+set t_Co=256
+
+" Load Color scheme:
+" https://github.com/altercation/vim-colors-solarized
+syntax enable
+set background=dark
+colorscheme solarized
+
+" Show full line on cursor
+set cursorline
+
+" Fix wrong indentation in yaml
+autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:>
