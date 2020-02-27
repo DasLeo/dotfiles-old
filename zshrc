@@ -11,4 +11,4 @@ export PATH=/usr/local/share/python:$PATH
 setopt histignorespace
 
 alias ll='ls -lahG'
-export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
