@@ -25,17 +25,33 @@ set iskeyword+=-
 " Remove the banner of the netrw file selector
 let g:netrw_banner=0
 
-" Size of netrw file selector 25%
+" Size of netrw file selector 20%
 let g:netrw_winsize = 20
 
 " netrw open in previous window
-let g:netrw_browse_split=4
+"let g:netrw_browse_split=4
+" netrw open in a new vertical split
+let g:netrw_browse_split=2
+
+" open files with 'v' in a righthand side pane instead of lefthand side
+let g:netrw_altv = 1
 
 " open netrw file selector automatically
-augroup ProjectDrawer
-  autocmd!
-  autocmd VimEnter * :Vexplore
-augroup END
+"augroup ProjectDrawer
+"  autocmd!
+"  autocmd VimEnter * :Vexplore
+"augroup END
+" ==========================================================
+
+" ==========================================================
+"                         NERDTree
+" ==========================================================
+" CTRL+n for NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+" open NERDTree when no file is specfied
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " ==========================================================
 
 " powerline
