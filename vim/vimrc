@@ -69,3 +69,7 @@ set cursorline
 
 " Fix wrong indentation in yaml
 autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:>
+
+set noshowmode  " to get rid of thing like --INSERT--
+set noshowcmd  " to get rid of display of last command
+set shortmess+=F  " to get rid of the file name displayed in the command line bar
