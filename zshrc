@@ -13,3 +13,6 @@ setopt histignorespace
 alias ll='ls -lahG'
 alias l='ls -lahG'
 export LANG=en_US.UTF-8
+
+# function to capture fields using awk
+function aprint() { awk "{print \$${1:-1}}"; }
