@@ -16,6 +16,10 @@ set showtabline=2
 " add (+=) the dash ("-") to word selection
 set iskeyword+=-
 
+" split vertically to the right and horizontally below
+set splitright
+set splitbelow
+
 " ==========================================================
 "                         netrw
 " ==========================================================
