@@ -16,3 +16,6 @@ export LANG=en_US.UTF-8
 
 # function to capture fields using awk
 function aprint() { awk "{print \$${1:-1}}"; }
+
+# function to watch for fully started COYO backends
+alias backendstarted='rancher logs -f coyo/coyo-backend | grep -i "started app"'
