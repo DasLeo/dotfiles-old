@@ -19,3 +19,6 @@ function aprint() { awk "{print \$${1:-1}}"; }
 
 # function to watch for fully started COYO backends
 alias backendstarted='rancher logs -f coyo/coyo-backend | grep -i "started app"'
+
+# Python 3 is my default version
+alias python=/usr/local/bin/python3.7
