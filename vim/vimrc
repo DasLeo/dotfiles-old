@@ -83,6 +83,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" Solarized colors for VIM integrated terminal (ter/term)
+hi Terminal ctermfg=fg ctermbg=NONE guifg=fg guibg=NONE guisp=NONE cterm=NONE gui=NONE
+
 " Show full line on cursor
 set cursorline
 
