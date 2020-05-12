@@ -94,6 +94,10 @@ set cursorline
 " alternative: cc / so to disable set cc=
 set colorcolumn=80
 
+" Include all whitespace characters if list is enabled
+" using: set list
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+
 " Fix wrong indentation in yaml
 autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:>
 
