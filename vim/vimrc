@@ -8,6 +8,7 @@ call vundle#begin()
 
 " List of plugins
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'davidhalter/jedi-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
