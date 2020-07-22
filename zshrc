@@ -20,6 +20,7 @@ function aprint() { awk "{print \$${1:-1}}"; }
 # function to watch for fully started COYO backends
 alias backendstarted='rancher logs -f coyo/coyo-backend | grep -i "started app"'
 alias backup-coyo-postgres="rancher exec -it coyo/coyo-db pg_dump --dbname coyo --username=postgres -F custom -f /var/lib/postgresql/data/$(date +%Y-%m-%d-%H-%M-%S).dump"
+alias deploy-support-container='rancher run -i -t -v /srv/encrypted/coyo-data:/data -p 9022:22 --label io.rancher.scheduler.affinity:host_label=coyo.host.class=monitoring --name support/sd-client alpine'
 
 # pip3, python3 and python3-config are synlinked by brew to /usr/local/bin
 # but if this fails you can prefer the python bin path in your PATH
