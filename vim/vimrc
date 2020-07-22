@@ -75,7 +75,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " ==========================================================
 
 " powerline
-set rtp+=/usr/local/lib/python3.7/site-packages/powerline/bindings/vim
+set rtp+=/usr/local/lib/python3.8/site-packages/powerline/bindings/vim
 set t_Co=256
 
 " Load Color scheme:
