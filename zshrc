@@ -23,6 +23,7 @@ alias backup-coyo-postgres="rancher exec -it coyo/coyo-db pg_dump --dbname coyo 
 alias deploy-support-container='rancher run -i -t -v /srv/encrypted/coyo-data:/data -p 9022:22 --label io.rancher.scheduler.affinity:host_label=coyo.host.class=monitoring --name support/sd-client alpine'
 alias chromium-flash='nohup -- ~/Applications/Chromium.app/Contents/MacOS/Chromium --ppapi-flash-path=/Library/Internet\ Plug-Ins/PepperFlashPlayer/PepperFlashPlayer.plugin --ppapi-flash-version=32.0.0.387 &'
 alias grep-branches="git branch -a | tr -d \* | sed '/->/d' | xargs git grep"
+alias cleanup_dsstore="find . -name '.DS_Store' -type f -delete"
 
 # pip3, python3 and python3-config are synlinked by brew to /usr/local/bin
 # but if this fails you can prefer the python bin path in your PATH
