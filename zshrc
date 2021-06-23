@@ -50,3 +50,8 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # Python 3 is my default version
 alias python=/usr/local/bin/python3.9
+
+# Android SDK
+ANDROID_HOME=~/Library/Android
+JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+export PATH=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/platform-tools:$PATH
