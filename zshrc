@@ -13,8 +13,11 @@ setopt appendhistory
 HISTSIZE=10000
 SAVEHIST=10000
 
-alias ll='ls -lahG'
-alias l='ls -lahG'
+#alias ll='ls -lahG'
+#alias l='ls -lahG'
+alias ll='exa -lg --icons'
+alias l='exa -lg --icons'
+alias la='exa -lga --icons'
 export LANG=en_US.UTF-8
 
 # function to capture fields using awk
