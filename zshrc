@@ -31,6 +31,18 @@ alias chromium-flash='nohup -- ~/Applications/Chromium.app/Contents/MacOS/Chromi
 alias grep-branches="git branch -a | tr -d \* | sed '/->/d' | xargs git grep"
 alias cleanup_dsstore="find . -name '.DS_Store' -type f -delete"
 
+# Kubernetes
+# Autocompletion
+autoload -Uz compinit
+compinit
+source <(kubectl completion zsh)
+source <(helm completion zsh)
+# aliases
+alias k='kubectl'
+alias ksys='kubectl --namespace=kube-system'
+# Krew (kubectl plugin manager)
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 # pip3, python3 and python3-config are synlinked by brew to /usr/local/bin
 # but if this fails you can prefer the python bin path in your PATH
 #export PATH="/usr/local/opt/python@3.8/bin:$PATH"
