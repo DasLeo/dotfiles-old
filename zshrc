@@ -9,6 +9,9 @@ export PATH=/usr/local/share/python:$PATH
 # | Options             |
 # +---------------------+
 setopt histignorespace
+setopt appendhistory
+HISTSIZE=10000
+SAVEHIST=10000
 
 alias ll='ls -lahG'
 alias l='ls -lahG'
