@@ -3,7 +3,7 @@ export PATH=/Users/leo/Library/Python/2.7/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/share/python:$PATH
 
-. /usr/local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
+. /usr/local/lib/python3.9/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # +---------------------+
 # | Options             |
@@ -30,4 +30,4 @@ alias cleanup_dsstore="find . -name '.DS_Store' -type f -delete"
 #export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 
 # Python 3 is my default version
-alias python=/usr/local/bin/python3.8
+alias python=/usr/local/bin/python3.9
