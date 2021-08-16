@@ -13,6 +13,7 @@ setopt histignorespace
 setopt appendhistory
 HISTSIZE=10000
 SAVEHIST=10000
+setopt INC_APPEND_HISTORY_TIME
 
 #alias ll='ls -lahG'
 #alias l='ls -lahG'
