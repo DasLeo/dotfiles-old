@@ -21,6 +21,7 @@ alias ll='exa -lg --icons'
 alias l='exa -lg --icons'
 alias la='exa -lga --icons'
 alias duf='duf --theme dark'
+function sha256sum() { shasum -a 256 "$@" ; } && export -f sha256sum
 export LANG=en_US.UTF-8
 
 # function to capture fields using awk
