@@ -11,6 +11,7 @@ export PATH=/usr/local/go/bin:$PATH
 # +---------------------+
 setopt histignorespace
 setopt appendhistory
+setopt histignorealldups
 HISTSIZE=10000
 SAVEHIST=10000
 setopt INC_APPEND_HISTORY_TIME
