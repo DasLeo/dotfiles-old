@@ -90,6 +90,9 @@ let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 colorscheme solarized
 
+" vim-gitgutter reset sign columns color
+highlight! link SignColumn LineNr
+
 " Set faster update time to update screen e.g. on writing files (100ms)
 set updatetime=100 
 
