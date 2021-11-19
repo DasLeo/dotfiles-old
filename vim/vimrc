@@ -36,6 +36,10 @@ set iskeyword+=-
 set splitright
 set splitbelow
 
+" Scroll by 2 lines instead of 1
+nnoremap <C-e> 2<C-e>
+nnoremap <C-y> 2<C-y>
+
 " ==========================================================
 "                         netrw
 " ==========================================================
