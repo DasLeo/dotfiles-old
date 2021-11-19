@@ -90,6 +90,9 @@ let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 colorscheme solarized
 
+" Set faster update time to update screen e.g. on writing files (100ms)
+set updatetime=100 
+
 " Solarized colors for VIM integrated terminal (ter/term)
 hi Terminal ctermfg=fg ctermbg=NONE guifg=fg guibg=NONE guisp=NONE cterm=NONE gui=NONE
 
